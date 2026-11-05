@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>SIVA TIME — Admin</title><link rel="stylesheet" href="admin.css"></head>
+<body><div class="shell">
+<header><a class="brand" href="/">SIVA<span>TIME</span></a><div><span id="whoami"></span><button id="logoutBtn" class="ghost hidden">Sign out</button></div></header>
+<main>
+<section id="loginView" class="panel login"><p class="eyebrow">PRIVATE CONTROL ROOM</p><h1>Admin <em>Access</em></h1><p>Sign in with the administrator account configured in Supabase.</p><form id="loginForm"><label>Email<input name="email" type="email" required autocomplete="username"></label><label>Password<input name="password" type="password" required autocomplete="current-password"></label><button class="primary">Sign in</button><p id="loginStatus" class="status" role="status"></p></form></section>
+<section id="dashboardView" class="hidden">
+<div class="welcome"><div><p class="eyebrow">SIVA TIME / CONTROL ROOM</p><h1>Portfolio <em>Dashboard</em></h1><p>Manage your public website content from one place.</p></div><a href="/" class="ghost">View website ↗</a></div>
+<div class="stats"><article><small>PROJECTS</small><b id="projectCount">—</b></article><article><small>ARTICLES</small><b id="articleCount">—</b></article><article><small>EXPERIENCES</small><b id="experienceCount">—</b></article><article><small>NEW ENQUIRIES</small><b id="messageCount">—</b></article></div>
+<nav class="tabs" id="tabs"><button data-tab="projects" class="active">Projects</button><button data-tab="articles">Journal</button><button data-tab="experiences">Experience</button><button data-tab="profile">Profile</button><button data-tab="messages">Messages</button></nav>
+<div id="panelContent" class="panel content-panel"></div><p id="globalStatus" class="status" role="status"></p>
+</section></main><footer>PRIVATE ADMIN AREA · SIVA TIME</footer></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="admin.js"></script></body></html>
