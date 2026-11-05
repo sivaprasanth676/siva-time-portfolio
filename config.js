@@ -1,6 +1,4 @@
-/* Public browser configuration. Supabase anon/publishable key is designed for browser use.
-   NEVER place the service_role key or Resend API key in this file. */
-window.SIVA_CONFIG = {
-  SUPABASE_URL: 'https://YOUR_PROJECT_REF.supabase.co',
-  SUPABASE_ANON_KEY: 'YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY'
-};
+
+// SIVA TIME Supabase configuration
+window.SUPABASE_URL = 'https://yakhrghwpxmshnjploeo.supabase.co';
+window.SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_gPjVD4a2L2AjVl6vmKXOfw_UvFN3WKd';
